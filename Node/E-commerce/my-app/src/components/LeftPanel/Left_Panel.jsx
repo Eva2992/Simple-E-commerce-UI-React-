@@ -1,10 +1,14 @@
 
 import { FilterSection } from "./filter_section ";
+import ProductGrid from './ProductGrid';
 export function Left_Panel() { //  import with curly braces in App.jsx
     return (
-        <div><h1>Simple E-Commerce</h1>
+        <div>
+          
+        <h1>Simple E-Commerce</h1>
         <FilterSection/>
-        <div>product grid</div>
+        <ProductGrid/>
+        
       </div>
     )
 }
