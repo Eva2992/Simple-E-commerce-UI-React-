@@ -6,10 +6,12 @@ export function FilterSection() {
 
 
 return (
-    <div>
-    <div>
+    <div className="mb-6">
+    <div className="flex flex-wrap justify-center gap-2">
        { categories.map( (category) => (
-            <button key = {category} > {category}</button>
+            <button key = {category} 
+            className="bg-emerald-500 text-white  hover:bg-emerald-800 hover:text-white  px-4 py-2 rounded-md transition"
+            > {category}</button>
         )) }
 
        { /*<button>Laptops</button>
@@ -20,9 +22,10 @@ return (
         <button>Printers</button> */ }
         
     </div>
-    
-        <div>
-            <button>Clear Filters</button>
+
+        <div className="flex justify-start mt-8">
+            <button className="bg-red-500 text-white px-4 py-3 rounded-md hover:bg-red-700 transition">
+                Clear Filters</button>
         </div>
 
         </div>
